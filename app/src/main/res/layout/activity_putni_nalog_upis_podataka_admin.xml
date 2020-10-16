@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimary"
+    tools:context=".PutniNalogUpisPodatakaAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/nazivDrustva"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEHNOMOBIL - ELSTING d.o.o."
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Broj"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/broj"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="43dp"
+                    android:text="U"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/var"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Varaždinu"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="75dp"
+                    android:text="dana"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/dan"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="65dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:text="Određujem da"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ime_i_prezime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="122dp"
+                    android:layout_marginTop="130dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:text="zvanje"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/zvanje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="165dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:text="na radnom mjestu"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/na_radnom_mjestu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="200dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:text="datum"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sluzbenoOdputuje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sluzbenoOdputujeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="310dp"
+                    android:background="#FF9800"
+                    android:gravity="center"
+                    android:text="ODABERITE DATUM"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="370dp"
+                    android:text="u mjesto"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mjesto"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="Upišite mjesto "
+                    android:inputType="textCapSentences|textMultiLine">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sa zadaćom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/opis"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:hint="Opis zadaće"
+                    android:inputType="textCapSentences|textMultiLine">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Putovanje može trajati"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/putovanje"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Upišite broj dana"
+                    android:inputType="number">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/putovanjeIznos"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Upišite taj broj slovima"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vrsta prijevoznog sredstva"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vozilo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Upišite vrstu prijevoznog sredstva"
+                    android:inputType="textCapWords">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Troškovi putovanja terete"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/troskoviPutovanja"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Upišite troškove putovanja"
+                    android:inputType="textCapSentences">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odobravam isplatu predujma u IZNOSU od"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/predujam"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="U formatu npr. 1.000,00 (BROJ) VALUTA"
+                    android:inputType="text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Za izvršeno službeno putovanje"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/odredujemPONOVI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="zvanje"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/zvanjePONOVI"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="na dužnosti"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/na_radnom_mjestuPONOVI"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="od"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/datum"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/datumButton"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ODABERITE DATUM I VRIJEME"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="#FF9800" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="do"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/datum2"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/datum2Button"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ODABERITE DATUM I VRIJEME"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="#FF9800" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Početno stanje brojila (km)"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:counterMaxLength="15"
+                app:counterEnabled="true"
+                app:counterTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pocetnoStanjeBrojila"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Upišite početno stanje brojila"
+                    android:inputType="number">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Završno stanje brojila (km)"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:counterMaxLength="15"
+                app:counterEnabled="true"
+                app:counterTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/zavrsnoStanjeBrojila"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Upišite završno stanje brojila"
+                    android:inputType="number">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Razlika:"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:id="@+id/razlika"
+                    android:inputType="number"
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="OBRAČUN DNEVNICA"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ODLAZAK"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/datumPONOVI"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POVRATAK"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/datum2PONOVI"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="76dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROJ SATI"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:id="@+id/brojSati"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:layout_marginTop="65dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="115dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROJ DNEVNICA"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:id="@+id/brojdnevnica"
+                    android:inputType="number"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="145dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROJ POLUDNEVNICA"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:id="@+id/brojpoludnevnica"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="135dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="175dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UKUPNO"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:id="@+id/ukupnoNovca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="165dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <ProgressBar
+
+                android:id="@+id/loading"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+
+            <Button
+                android:id="@+id/pregledaj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Pregledaj Putni nalog">
+
+            </Button>
+
+            <Button
+                android:id="@+id/posalji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#20B500"
+                android:gravity="center"
+                android:enabled="false"
+                android:text="Pošalji Putni nalog">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/izađi"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A50A0A"
+                android:gravity="center"
+                android:text="Izađi">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

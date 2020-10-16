@@ -1,0 +1,2 @@
+rootProject.name='Putni_nalozi'
+include ':app'

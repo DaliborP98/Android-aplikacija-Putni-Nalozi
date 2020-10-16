@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".PutniNaloziDetalji">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/nazivDrustva"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEHNOMOBIL - ELSTING d.o.o."
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Broj"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/brojPutnogNaloga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_marginTop="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="U"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/var"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Varaždinu"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <TextView
+                    android:layout_marginTop="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dana"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/dan"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+
+                    android:layout_marginTop="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Određujem da"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/ime_i_prezime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="122dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:text="zvanje"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/zvanje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="125dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="na radnom mjestu"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/na_radnom_mjestu"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginStart="155dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="175dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="službeno odputuje dana"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/sluzbenoOdputuje"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:text="u mjesto"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/mjesto"
+                    android:layout_marginTop="225dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sa zadaćom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/opis"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Putovanje može trajati"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/putovanjeIznos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/putovanje"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fixnodana"
+                    android:text="dana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:text="Odobravam upotrebu"
+                />
+
+            <TextView
+                android:id="@+id/vozilo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Troškovi putovanja terete"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/troskoviPutovanja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odobravam isplatu predujma u IZNOSU od"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/predujam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Za izvršeno službeno putovanje"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/odredujemPONOVI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="zvanje"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/zvanjePONOVI"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="na dužnosti"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/na_radnom_mjestuPONOVI"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="od"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/datum"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_marginTop="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="do"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/datum2"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Početno stanje brojila (km)"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/pocetnoStanjeBrojila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Završno stanje brojila (km)"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/zavrsnoStanjeBrojila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Razlika:"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/razlika"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="OBRAČUN DNEVNICA"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ODLAZAK"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/datumPONOVI"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POVRATAK"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/datum2PONOVI"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROJ SATI"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/brojSati"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_marginTop="105dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROJ DNEVNICA"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/brojdnevnica"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="135dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROJ POLUDNEVNICA"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/brojpoludnevnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="135dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="165dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UKUPNO"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/ukupnoNovca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="165dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/pregledaj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Pregledaj Putni nalog">
+
+            </Button>
+
+            <Button
+                android:id="@+id/izađi"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A50A0A"
+                android:gravity="center"
+                android:text="Izađi">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
